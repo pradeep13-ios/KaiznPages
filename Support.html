@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kaizn Support</title>
+  <meta name="description" content="Help, FAQs, and contact for Kaizn." />
+  <style>
+    :root{--bg:#fff7fb;--ink:#121212;--accent:#ff6fa0;}
+    body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;color:var(--ink);background:var(--bg);}
+    .wrap{max-width:880px;margin:0 auto;padding:32px;}
+    header{display:flex;gap:12px;align-items:center;margin-bottom:20px}
+    .logo{width:28px;height:28px;border-radius:8px;background:#ffd7e6;display:grid;place-items:center}
+    .petal{width:12px;height:12px;background:var(--accent);border-radius:50%}
+    h1{margin:0;font-size:1.5rem}
+    .card{background:#fff;border:1px solid #eee;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 12px rgba(0,0,0,.04)}
+    a{color:#d63d72}
+    footer{margin-top:28px;font-size:.9rem;opacity:.7}
+    ul{margin:8px 0 0 20px}
+    .btn{display:inline-block;margin-top:10px;padding:10px 14px;border-radius:10px;border:1px solid #eee;background:#fff}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo"><div class="petal"></div></div>
+      <h1>Kaizn Support</h1>
+    </header>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email us and we’ll reply within 24–48 hours.</p>
+      <a class="btn" href="mailto:support@kaizn.app?subject=Kaizn%20Support">Email Support</a>
+    </div>
+
+    <div class="card">
+      <h2>FAQs</h2>
+      <ul>
+        <li><strong>Reminders not appearing?</strong> Open the app → enable notifications in Settings → ensure Focus/Do Not Disturb is off.</li>
+        <li><strong>Change reminder times?</strong> Settings → Reminders (Morning/Afternoon/Evening).</li>
+        <li><strong>Lost streak?</strong> Streaks reset after a missed day by design.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Privacy</h2>
+      <p>We collect minimal data to operate reminders and sync goals. Read our <a href="/privacy.html">Privacy Policy</a>.</p>
+    </div>
+
+    <footer>© <span id="y"></span> Kaizn • Version 1.0 • <a href="/terms.html">Terms</a></footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
